@@ -1,12 +1,13 @@
-export default function Button () {
-
-    const handelClick = () => {
-        console.log("clicked");
-    }
-
+export default function Button ({setAmount}) {
     return(
         <div>
-            <button onClick={handelClick}>Increment</button>
+            <button onClick={
+                () => {
+                    setAmount((prev) => {
+                        return prev + 1
+                    });
+                }
+            }>Increment</button>
         </div>
     )
 }

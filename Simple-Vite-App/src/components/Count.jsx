@@ -1,8 +1,16 @@
-export default function Count (props) {
+import {useEffect} from "react";
+
+export default function Count ({amount}) {
+    useEffect(() => {
+        return () => {
+            document.title = `You clicked ${amount} times`;
+        };
+    }, [amount]);
+
+
     return(
         <div>
-            <p>Count amount: <span>{props.number}</span></p>
+            <p>Count amount: <span>{amount}</span></p>
         </div>
     )
 }
-import React from 'react'

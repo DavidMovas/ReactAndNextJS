@@ -1,4 +1,5 @@
-import Card from "./Card.jsx";
+import Card from "./components/Card.jsx";
+import "./index.css";
 
 export default function App() {
     return (

@@ -5,7 +5,7 @@ import CountButtons from "./CountButtons.jsx";
 
 export default function Card() {
     return (
-        <div>
+        <div className="card">
             <Title/>
             <Count/>
             <ResetButton/>
